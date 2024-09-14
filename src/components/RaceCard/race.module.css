@@ -1,0 +1,60 @@
+.racecard-wrapper {
+  width: 100%;
+  max-width: 360px;
+  background: var(--theme-primary-color);
+  border-radius: var(--theme-card-radius);
+}
+
+.racecard-wrapper:hover {
+  cursor: pointer;
+}
+
+.racecard-image-container {
+  position: relative;
+}
+
+.racecard-image-container img {
+  border-radius: var(--theme-card-radius) var(--theme-card-radius) 0 0;
+}
+
+.racecard-wrapper:hover .racecard-image-container img {
+  transition: all 0.2s ease-in-out;
+  filter: brightness(0.6);
+}
+
+.racecard-image-container svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.racecard-wrapper:hover .racecard-image-container svg {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.racecard-content-name {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.racecard-skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.racecard-skills-container h2 {
+  color: var(--theme-text-variant);
+  font-size: 14px;
+}
+
+.racecard-content {
+  padding: 20px 24px;
+}

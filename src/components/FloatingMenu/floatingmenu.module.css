@@ -1,0 +1,17 @@
+.floatingmenu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  gap: 40px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--theme-floating-menu);
+  border-radius: 20px;
+}
+
+.floatingmenu-wrapper svg {
+  cursor: pointer;
+}
