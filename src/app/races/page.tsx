@@ -13,8 +13,6 @@ export default function Races() {
       const res = await fetch(`/api/races`);
       const json = await res.json();
 
-      console.log(json);
-
       setRaces(json)  
     }
     

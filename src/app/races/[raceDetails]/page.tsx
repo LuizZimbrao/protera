@@ -22,9 +22,6 @@ export default function RaceDetails({ params: { raceDetails } }: RaceDetails) {
     }
     
     fetchRace()
-
-    console.log('races>>>', race);
-    
   }, [])
 
   if (!race) return null
